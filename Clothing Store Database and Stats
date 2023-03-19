@@ -1,0 +1,25 @@
+-CREATED A CLOTHING STORE DATABASE
+CREATE TABLE clothing_store (id INTEGER PRIMARY KEY, clothes TEXT, aisle INTEGER, price INTEGER, 
+gender TEXT);
+
+INSERT INTO clothing_store VALUES (1, "shirt", 2, 20, "female");
+INSERT INTO clothing_store VALUES (2, "pants", 3, 40, "male");
+INSERT INTO clothing_store VALUES (3, "sweatshirt", 4, 35, "female");
+INSERT INTO clothing_store VALUES (4, "pants", 3, 45, "male");
+INSERT INTO clothing_store VALUES (5, "shoes", 6, 25, "female");
+INSERT INTO clothing_store VALUES (6, "shirt", 2, 25, "female");
+INSERT INTO clothing_store VALUES (7, "pants", 3, 35, "male");
+INSERT INTO clothing_store VALUES (8, "shoes", 6, 35, "male");
+INSERT INTO clothing_store VALUES (9, "sweatshirt", 4, 40, "female");
+INSERT INTO clothing_store VALUES (10, "shirt", 2, 15, "male");
+INSERT INTO clothing_store VALUES (11, "jewelry", 8, 10, "female");
+INSERT INTO clothing_store VALUES (12, "pants", 3, 50, "female");
+INSERT INTO clothing_store VALUES (13, "sweatshirt", 3, 45, "male");
+INSERT INTO clothing_store VALUES (14, "pants", 4, 45, "female");
+INSERT INTO clothing_store VALUES (15, "shirt", 3, 20, "male");
+
+SORTED THE PRICE OF ITEMS SOLD IN ASCENDING ORDER
+SELECT * FROM clothing_store ORDER BY price ASC;
+
+DISPLAYED THE MOST EXPENSIVE PIECE OF CLOTHING SOLD
+SELECT MAX (price) FROM clothing_store;
